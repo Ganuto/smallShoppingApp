@@ -10,6 +10,8 @@ import { RecipesComponent } from './recipes/recipes.component';
 import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.component';
 import { RecipeListComponent } from './recipes/recipe-list/recipe-list.component';
 import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-item.component';
+import { DropdownDirective } from './shared/dropdown.directive';
+import { shoppingListService } from './shopping-list/shopping-list.service';
 
 @NgModule({
   declarations: [
@@ -20,13 +22,14 @@ import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-it
     RecipesComponent,
     RecipeDetailComponent,
     RecipeListComponent,
-    RecipeItemComponent
+    RecipeItemComponent,
+    DropdownDirective
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [shoppingListService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

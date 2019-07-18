@@ -3,17 +3,20 @@
   <div class="collapse navbar-collapse" id="navbarColor02">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="#" (click)="onSelect('recipe')">Recipe<span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#" (click)="onSelect('recipe')">Recipe</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#" (click)="onSelect('shopping-list')">Shopping List</a>
       </li>
     </ul>
-    <li class="nav-item dropdown">
-      <a href="#" class="dropdown-toggle dropdown-header" role="button">Manage <span class="caret"></span></a>
+    <li class="nav-item dropdown" appDropdown>
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        Dropdown link
+      </a>
       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-        <a href="#" class="dropdown-item">Save Data</a>
-        <a href="#" class="dropdown-item">Fetch Data</a>
+        <a class="dropdown-item" href="#">Save Data</a>
+        <a class="dropdown-item" href="#">Fetch Data</a>
       </div>
     </li>
   </div>
